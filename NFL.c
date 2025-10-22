@@ -21,6 +21,10 @@ int main(){
     int score = 0;
     printf("Enter the NFL Score (Enter 1 to stop):");
     scanf(" %d", &score);
+    while(score < 0 ){
+       printf("Invalid score try again, Enter the NFL Score (Enter 1 to stop):");
+       scanf(" %d", &score); 
+    }
     while(score != 1){
         get_poss(score);
         printf("Enter the NFL Score (Enter 1 to stop):");
